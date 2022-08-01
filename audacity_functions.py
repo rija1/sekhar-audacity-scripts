@@ -74,4 +74,4 @@ def quick_test():
     """Example list of commands."""
     do_command('Help: Command=Help')
     do_command('Help: Command="GetInfo"')
-    #do_command('SetPreference: Name=GUI/Theme Value=classic Reload=1')
+    

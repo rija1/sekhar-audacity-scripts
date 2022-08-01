@@ -7,5 +7,5 @@
 
 # Create a shortcut: Set the target to %systemroot%\System32\cmd.exe /c "python C:\Users\MyUsername\Documents\audacity_export_win.py"
 
-output_dir = '/Users/reedz/Desktop/audacity_test/'
-server_dir = '/Volumes/Public/Daily recordings 每日上課音頻/'
+output_dir = 'C:\Users\Dell\Desktop\'
+server_dir = 'H:\Daily recordings 每日上課音頻\'
