@@ -12,9 +12,8 @@ import sys
 import shutil
 from datetime import datetime
 from appscript import *
-from audacity_functions import *
 
-# Init
+# Init - Start
 
 if sys.platform == 'win32':
     print("pipe-test.py, running on windows")
@@ -44,7 +43,9 @@ print("-- File to write to has been opened")
 FROMFILE = open(FROMNAME, 'rt')
 print("-- File to read from has now been opened too\r\n")
 
-# End Init
+# Init - End
+
+# Functions - Start
 
 def send_command(command):
     """Send a single command."""
@@ -74,4 +75,17 @@ def quick_test():
     """Example list of commands."""
     do_command('Help: Command=Help')
     do_command('Help: Command="GetInfo"')
+    
+# Functions - End 
+  
+  
+# Init session number depending on time of the day  
+if datetime.today().hour < 13:
+    session = "S2"
+else:
+    session = "S3"
+    
+# Set Export Format
+do_command('SetPreference: Name="FileFormats/MP3RateModeChoice" Value="CBR" Reload=1')
+do_command('SetPreference: Name="FileFormats/MP3Bitrate" Value="128" Reload=1')
     

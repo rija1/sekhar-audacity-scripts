@@ -9,3 +9,4 @@
 
 output_dir = '/Users/sekharretreat/Desktop/'
 server_dir = '/Volumes/Public/Daily recordings 每日上課音頻/'
+year = 'Y2'
