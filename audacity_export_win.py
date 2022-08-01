@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 # Make sure Audacity is running first and that mod-script-pipe is enabled before running this script.

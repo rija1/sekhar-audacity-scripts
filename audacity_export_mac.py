@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 # Make sure Audacity is running first and that mod-script-pipe is enabled before running this script.
@@ -8,8 +8,11 @@ import sys
 import shutil
 from datetime import datetime
 from appscript import *
+
 from audacity_init import *
 from audacity_config import *
+
+import tkinter
 
 # Sekhar Audacity Export Start
 track_output = output_dir + datetime.today().strftime('%y%m%d') + '-DKR-' + year + '-' + session + '-En.mp3'
