@@ -1,0 +1,3 @@
+([('audacity_export_mac',
+   '/Users/reedz/Desktop/sekhar-audacity-scripts/bin/mac/dist/audacity_export_mac',
+   'EXECUTABLE')],)
