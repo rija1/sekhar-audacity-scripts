@@ -70,6 +70,9 @@ def addStereoTrack():
 
 def launchExport():
     
+    # Workaraound to fix tracks that can't be selected individually when nothing is selected before
+    do_command('SelectAll:')
+    
     # Set Export Format
     do_command('SetPreference: Name="FileFormats/MP3RateModeChoice" Value="CBR" Reload=1')
     do_command('SetPreference: Name="FileFormats/MP3Bitrate" Value="128" Reload=1')
@@ -184,8 +187,6 @@ if datetime.today().hour < 13:
     session = "S2"
 else:
     session = "S3"
-    
-
 
 root = Tk()
 root.title('Sekhar Audacity Export')
@@ -194,8 +195,6 @@ root.geometry("500x360")
 var = IntVar()
 
 label1 = Label(root,text="Export options",font=("Arial", 16)).place(x=10,y=10)
-
-do_command('SetPreference: Name=GUI/Theme Value=classic Reload=1')
 
 export_radio = IntVar()
 rbutton1 = Radiobutton(root, text="Export Lama/Chi", variable=export_radio, value=1,command=sel);
