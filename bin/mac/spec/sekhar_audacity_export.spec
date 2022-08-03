@@ -37,6 +37,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='sekhar_audacity.icns',
 )
 coll = COLLECT(
     exe,
@@ -51,6 +52,6 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='sekhar_audacity_export.app',
-    icon=None,
+    icon='sekhar_audacity.icns',
     bundle_identifier=None,
 )

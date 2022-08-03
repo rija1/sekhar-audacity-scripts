@@ -2,7 +2,7 @@
  False,
  False,
  True,
- None,
+ '/Users/reedz/Desktop/sekhar-audacity-scripts/bin/mac/spec/sekhar_audacity.icns',
  None,
  False,
  False,
@@ -59,7 +59,7 @@
  [],
  False,
  False,
- 1659519878,
+ 1659522927,
  [('runw',
    '/usr/local/Cellar/pyinstaller/5.3/libexec/lib/python3.10/site-packages/PyInstaller/bootloader/Darwin-64bit/runw',
    'EXECUTABLE')])

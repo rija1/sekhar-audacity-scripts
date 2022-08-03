@@ -8,10 +8,6 @@
 		<data>
 		PBsyneyf7ptVWx1s4hGpbINpt5Q=
 		</data>
-		<key>Resources/icon-windowed.icns</key>
-		<data>
-		eEHOuYpZLB0vKGVIWGZOh5rH8+o=
-		</data>
 		<key>Resources/lxml/isoschematron/resources/rng/iso-schematron.rng</key>
 		<data>
 		Go1op5prM1pmBGPMmbTo7uFqB6E=
@@ -47,6 +43,10 @@
 		<key>Resources/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt</key>
 		<data>
 		70CMM3nNaMhY+q1Fr/J9H9teBhk=
+		</data>
+		<key>Resources/sekhar_audacity.icns</key>
+		<data>
+		VI15fpTMrh9zgujHT2Kn6SAz2KE=
 		</data>
 		<key>Resources/tcl/auto.tcl</key>
 		<data>
@@ -2417,13 +2417,6 @@
 			oyNowB7VnxKzZ+6uNrMWmGYYOhjUm8T7RXr+EiP+bxk=
 			</data>
 		</dict>
-		<key>Resources/icon-windowed.icns</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uQo7VuWRab4Phv4EEGmfQsyqFqDIXZgO8OtgaAMvCzY=
-			</data>
-		</dict>
 		<key>Resources/lxml/isoschematron/resources/rng/iso-schematron.rng</key>
 		<dict>
 			<key>hash2</key>
@@ -2485,6 +2478,13 @@
 			<key>hash2</key>
 			<data>
 			OGLiFswuLJEW5EPYKOeoauuCJFEtVa6jyzBE1OcJI98=
+			</data>
+		</dict>
+		<key>Resources/sekhar_audacity.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ej8r5DOE3f85xE5n+c9oh50EDFjcXiVQm2PkDeKdguE=
 			</data>
 		</dict>
 		<key>Resources/tcl/auto.tcl</key>

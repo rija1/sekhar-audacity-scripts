@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>sekhar_audacity_export</string>
 	<key>CFBundleIconFile</key>
-	<string>icon-windowed.icns</string>
+	<string>sekhar_audacity.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>sekhar_audacity_export</string>
 	<key>CFBundleInfoDictionaryVersion</key>
