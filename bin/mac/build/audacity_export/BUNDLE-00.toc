@@ -1,3 +1,0 @@
-([('audacity_export',
-   '/Users/reedz/Desktop/sekhar-audacity-scripts/bin/mac/dist/audacity_export',
-   'EXECUTABLE')],)
