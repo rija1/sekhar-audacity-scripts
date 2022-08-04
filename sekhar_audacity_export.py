@@ -91,6 +91,7 @@ def launchExport():
      
     exportPath = os.path.join(entryExportPath.get(), '')
     copyPath = os.path.join(entryCopyPath.get(), '')
+    year = entryYear.get()
     
     print("exportPath: " + exportPath)
     print("copyPath: " + copyPath)
@@ -226,6 +227,11 @@ rbutton3 = Radiobutton(root, text="Export Eng only", variable=export_radio, valu
 rbutton3.place(x=10,y=100)
 
 labelExportPath = Label(root,text="Export Path",font=("Arial", 13)).place(x=15,y=140)
+
+labelYear = Label(root,text="Year",font=("Arial", 13)).place(x=305,y=140)
+entryYear = Entry(root,width=5)
+entryYear.place(x=345,y=137)
+entryYear.insert(0, config_year)
 
 entryExportPath = Entry(root)
 entryExportPath.place(x=100,y=137)
