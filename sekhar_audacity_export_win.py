@@ -18,6 +18,7 @@ import subprocess
 output_dir = "C:\\Users\\Dell\\Desktop\\"
 server_dir = "H:\\Daily recordings 每日上課音頻\\"
 config_year = "Y2"
+day_folder_dir = datetime.today().strftime('%y%m%d')
 
 # Functions - Start
 
@@ -92,7 +93,10 @@ def launchExport():
     do_command('SetPreference: Name="FileFormats/MP3RateModeChoice" Value="CBR" Reload=1')
     do_command('SetPreference: Name="FileFormats/MP3Bitrate" Value="128" Reload=1')
      
-    exportPath = os.path.join(entryExportPath.get(), '')
+    exportPath = os.path.join(entryExportPath.get(), day_folder_dir)
+    if not os.path.exists(exportPath):
+        os.mkdir(exportPath)
+
     copyPath = os.path.join(entryCopyPath.get(), '')
     year = entryYear.get()
     
@@ -113,8 +117,8 @@ def launchExport():
 
     # Export Lama/Chi
     if export_radio.get() == 1:
-        top_track_output = exportPath + datetime.today().strftime('%y%m%d') + '-DKR-' + year + '-' + session + '-Lama.mp3'
-        bottom_track_output = exportPath + datetime.today().strftime('%y%m%d') + '-DKR-' + year + '-' + session + '-Chi.mp3'
+        top_track_output = os.path.join(exportPath,datetime.today().strftime('%y%m%d') + '-DKR-' + year + '-' + session + '-Lama.mp3')
+        bottom_track_output = os.path.join(exportPath,datetime.today().strftime('%y%m%d') + '-DKR-' + year + '-' + session + '-Chi.mp3')
 
         # Select Track 1 - Top , Then Normalize / Export
         do_command('SelectTracks:Mode="Set" Track="0" TrackCount="0.5"')
