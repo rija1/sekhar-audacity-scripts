@@ -1,1 +1,1 @@
-pyinstaller --icon=sekhar_audacity.icns --specpath bin/win/spec --distpath bin/win/dist --workpath bin/win/build --noconsole --onedir --hidden-import="appscript" sekhar_audacity_export.py
+pyinstaller --icon=sekhar_audacity.ico --specpath bin/win/spec --distpath bin/win/dist --workpath bin/win/build --noconsole --onedir sekhar_audacity_export_win.py
